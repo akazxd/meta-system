@@ -1,16 +1,18 @@
 pkgname=meta-system
 pkgver=1
-pkgrel=1
+pkgrel=4
 pkgdesc='Important packages for a functioning install'
-url=''
+url='https://github.com/akazxd/meta-system'
 arch=('any')
 license=('GPL')
+optdepends=(partitionmanager kdeconnect)
 depends=( #alhp: https://somegit.dev/ALHP/ALHP.GO
-    base linux-firmware linux-xanmod-edge-x64v3 linux-xanmod-edge-x64v3-headers booster
-    efibootmgr nano sudo which nvidia-dkms amd-ucode util-linux mandoc openssh
+    base base-devel git sudo nano less which wget curl iwd util-linux
+    paru alhp-keyring alhp-mirrorlist chaotic-keyring chaotic-mirrorlist
+    linux-xanmod-edge-x64v3 linux-xanmod-edge-x64v3-headers
+    nvidia-dkms amd-ucode efibootmgr linux-firmware booster
+    mold firefox mpv yt-dlp expac tk uv xdg-user-dirs xdg-utils bash-completion
     kde-utilities-meta kde-system-meta plasma-meta kde-graphics-meta ghostwriter
-    firefox code mpv wget curl expac tk uv xdg-user-dirs xdg-utils
-    tesseract-data-eng firefox-ublock-origin bash-completion
-    git base-devel paru alhp-mirrorlist alhp-keyring chaotic-keyring chaotic-keyring
-    wl-clipboard ttf-croscore ttf-liberation trash-cli ffmpegthumbs iwd less yt-dlp
+    wl-clipboard ttf-croscore ttf-liberation trash-cli ffmpegthumbs kimageformats
+    tesseract-data-eng firefox-ublock-origin mandoc openssh
 )
